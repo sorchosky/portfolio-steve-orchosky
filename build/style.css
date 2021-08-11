@@ -897,14 +897,15 @@ header .navbar-toggler {
     width: 50%; }
   .full-nav .full-nav__project {
     background-position: center;
-    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: block;
     position: relative;
-    transition: background-size .3s ease-in-out; }
-    .full-nav .full-nav__project:hover {
-      background-size: auto 108%; }
-      .full-nav .full-nav__project:hover p {
-        color: #F1EBDC; }
+    transition: .3s ease-in-out; }
+    .full-nav .full-nav__project:hover p {
+      color: #F1EBDC; }
+    .full-nav .full-nav__project p {
+      color: #F1EBDC; }
   .full-nav .project-text {
     bottom: 0em;
     position: absolute;

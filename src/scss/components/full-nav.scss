@@ -39,17 +39,22 @@
 
     .full-nav__project {
         background-position: center;
-        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: block;
         position: relative;
-        transition: background-size .3s ease-in-out;
+        transition: .3s ease-in-out;
 
         &:hover {
-            background-size: auto 108%;
+            // background-size: 108% auto;
 
             p {
                 color: $offwhite;
             }
+        }
+
+        p {
+            color: $offwhite;
         }
     }
 
