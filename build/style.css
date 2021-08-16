@@ -747,19 +747,31 @@ h1, .h1 {
       font-size: 4.5em; } }
 
 h2, .h2 {
-  font-size: 2.5em;
-  line-height: 1.1;
+  font-size: 2em;
+  line-height: 1.2;
   margin-bottom: 1em; }
+  @media (min-width: 767.98px) {
+    h2, .h2 {
+      font-size: 2.5em; } }
   @media (min-width: 991.98px) {
     h2, .h2 {
       font-size: 3.25em; } }
 
 h3, .h3 {
-  font-size: 2em;
-  margin-bottom: .5em; }
+  font-size: 1.5em;
+  line-height: 1.2;
+  margin: 1em 0 .5em; }
+  @media (min-width: 767.98px) {
+    h3, .h3 {
+      font-size: 2em; } }
 
 h4, .h4 {
-  margin-top: 1.5em; }
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-top: 1.25em; }
+  @media (min-width: 767.98px) {
+    h4, .h4 {
+      font-size: 1.5em; } }
 
 h4, h5, h6 {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
@@ -1035,6 +1047,9 @@ header .navbar-toggler {
   padding: 1em; }
 
 /* PREV-NEXT LINK */
+#prevNextProjects {
+  margin: 3em 0; }
+
 .prev-next-link {
   margin: 0;
   padding: 1em;
@@ -1107,6 +1122,53 @@ header .navbar-toggler {
     margin-left: -1em; }
   .prev-next .next-label {
     margin-right: -1em; }
+
+.tab-content > .active {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap; }
+
+.nav-pills {
+  padding: .75em 0; }
+  @media (min-width: 575.98px) {
+    .nav-pills {
+      padding: 0; } }
+  .nav-pills li {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%; }
+    @media (min-width: 575.98px) {
+      .nav-pills li {
+        width: 25%; } }
+    .nav-pills li a {
+      box-sizing: border-box;
+      padding: 1em;
+      text-align: center;
+      text-decoration: none;
+      transition: all .3s ease-in-out;
+      width: 100%; }
+      .nav-pills li a.active {
+        background: #050E27; }
+
+.nav-justified {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  @media (min-width: 575.98px) {
+    .nav-justified {
+      flex-direction: row; } }
+
+.tab-content {
+  background: #050E27;
+  padding: 2em .5em; }
+  @media (min-width: 767.98px) {
+    .tab-content {
+      padding: 2em; } }
+  .tab-content figure {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .tab-content li {
+    padding: .5em 0; }
 
 /* FOOTER */
 footer {

@@ -1,0 +1,64 @@
+.tab-content > .active {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-pills {
+    padding: .75em 0;
+
+    @include sm {
+        padding: 0;
+    }
+
+    li {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+
+        @include sm {
+            width: 25%;
+        }
+
+        a {
+            box-sizing: border-box;
+            padding: 1em;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+            width: 100%;
+    
+            &.active {
+                background: $trueblack;
+            }
+        }
+    }
+}
+
+.nav-justified {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include sm {
+        flex-direction: row;
+    }
+}
+
+.tab-content {
+    background: $trueblack;
+    padding: 2em .5em;
+
+    @include md {
+        padding: 2em;
+    }
+
+    figure {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    li {
+        padding: .5em 0;
+    }
+}
