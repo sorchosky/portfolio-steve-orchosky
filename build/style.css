@@ -744,7 +744,7 @@ h1, .h1 {
       font-size: 3.5em; } }
   @media (min-width: 991.98px) {
     h1, .h1 {
-      font-size: 4.5em; } }
+      font-size: 4em; } }
 
 h2, .h2 {
   font-size: 2em;
@@ -813,8 +813,10 @@ p, .p {
 blockquote {
   font-family: "DM Serif Display", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
-  font-size: 1.5em;
-  line-height: 1.3333; }
+  font-size: 1.2em;
+  letter-spacing: .03em;
+  line-height: 1.4;
+  margin: .5em 0; }
 
 figcaption {
   color: #979EB4;
@@ -1010,12 +1012,11 @@ header .navbar-toggler {
   height: auto;
   justify-content: flex-start;
   margin-top: 0;
-  padding: 8em 0 2em;
+  padding: 6em 15px 2em;
   position: relative; }
   @media (min-width: 991.98px) {
     .jumbotron {
-      height: 80vh;
-      padding: 0; } }
+      padding: 8em 15px 4em; } }
 
 #mini-nav {
   align-items: center;
@@ -1335,12 +1336,6 @@ section.row {
   font-size: .75em;
   letter-spacing: .08em;
   text-transform: uppercase; }
-
-/* PROCESS */
-.jumbotron__h6 {
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: .08em; }
 
 .uspc__homepage video {
   margin-bottom: -1em; }
