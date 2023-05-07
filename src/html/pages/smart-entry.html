@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../components/head.html', {
+    "title": "Smart Entry Mobile App | Steve Orchosky"
+})
+
+<body onload="miniNav(); prevNextProjects();" id="smart-entry" class="process-page">
+    
+    @@include('../components/header.html')
+
+    <main class="container">
+        <!-- Cover -->
+        <div class="jumbotron">
+            <div class="">
+                <h1 class="h1 text-left">Smart Entry Mobile App</h1>
+                <p class="lead">Mobile app companion for an iOT smart door</p>
+            </div>
+        </div>
+
+        <div id="mini-nav"></div>
+
+        <img class="img-fluid" src="./img/project--optum/optum--project-cover@2x.jpg" alt="Optum logo">
+
+        <!-- About the Project -->
+        <section class="row">
+            <div>
+                <div class="col-12 col-md-10">
+                    <h6 class="eyebrow">Background</h6>
+                    <h2>Enabling remote access for Smart Entry users</h2>
+                </div>
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <p class="p p--large">
+                        With my team at frog, I partnered with a client in the home goods space to create a proprietary “Smart Entry” system for Home Owners. I led the design of a functional mid-fidelity mobile app controller, which I was later responsible for evolving into a high-fidelity mobile prototype. I also contributed to establishing and documenting interaction design patterns with the physical door, led 3 user research initiatives, and facilitated multiple remote workshops to gather product requirements and establish a feature roadmap.
+                    </p>
+
+                    <div class="row no-gutters">
+                        <div class="col col-12 col-md-7">
+                            <h4>My Role</h4>
+                            <p>Interaction Designer</p>
+                            <h4>Client &amp; Context</h4>
+                            <p>Fortune 500 home goods company, client of frog design</p>
+                            <h4>Deliverable</h4>
+                            <p>High-fidelity mobile app prototype, iOT smart entryway prototype, information architecture, and user interaction diagrams</p>
+                        </div>
+                        <div class="col col-12 offset-md-1 col-md-4">
+                            <h4>Additional Team</h4>
+                            <ul class="full-team__ul">
+
+                                @@loop('../components/team-li.html', [
+                                    { "name": "Mitch Murphy", "title": "Design Director" },
+                                    { "name": "Jason Jian", "title": "Visual Designer" },
+                                    { "name": "Ryan Starling", "title": "Design Director" },
+                                    { "name": "Whit Jardine", "title": "Product Manager" },
+                                    { "name": "Joe Gonzalez", "title": "Industrial Designer" },
+                                    { "name": "Videl Smith", "title": "Design Technologist" },
+                                    { "name": "Jasmine Busch", "title": "Director of Program Management" },
+                                    { "name": "Shining Li", "title": "Sr. Strategist" },
+                                ])
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./img/project--optum/design-system-image.jpg" srcset="./img/project--optum/design-system-image@2x.jpg 2x, ./img/project--optum/design-system-image.jpg 1x" alt="Isometric spash screen of design system components" class="col img-fluid">
+                    <figcaption>Sample components created in the Boulevard design system</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Background -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Background</h6>
+                <h2>Bundling modular iOT features into a single product offering</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Our client reached out to frog with the goal of creating the first all-inclusive &ldquo;Smart Entry&rdquo; system. This brief was established because of market pressure from a competitor, Masonite, who recently release a Smart Door in partnership with Ring and Yale. Our client sought to create their own Smart Entry system that didn&rsquo;t feel modular and could be offered as an all-in-one proprietary product.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Collage of Smart Home products">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- User Stories -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">User Stories</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Upon joining the project, I first needed to establish a set of user stories around which I would anchor my interaction flows. I collaborated with the design and product team at frog to run a series of discovery activities with the client and documented some high-priority user requirements to guide my initial prototype.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Collage of Smart Home products">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Door Mode Diagramming -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Door Mode Diagramming</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    After establishing user stories, I believed that translating the user stories into storyboards would the best way to communicate requirements to the larger tech team. Given the amount of variability in sensor inputs and feedback the door needed to produce, I realized that storyboarding was not an appropriate way of communicating both the story of usage and the product interactions simultaneously.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Collage of Smart Home products">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <p>
+                    I changed tactics to instead create two complementary documents. The first was a journey map showing how users flow between different proximity zones around the door over time. The second was a lexicon of Door Modes and Door Events, highlighting the expected inputs and feedback from the Smart Entry during use. By bundling the 11 component signals into modes and states, I could communicate easily with the prototyping team what feedback should be expected from the door at a given.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Door Modes document">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Door Events Document">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="User Journey map">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Main Components -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Mid-Fidelity Design</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    The primary interaction design deliverable was to create a remote control for accessing the door. Instinctively, I created a layout that closely emulated the control panel on the door.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Side by side of mid-fidelity screen and door control panel">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Information Architecture -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Information Architecture</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    To understand the necessary functions outside of the main interactions, I created an Information Architecture to outline future flows for user set-up, adding and editing users, activity logging, and notification settings. I also used this document with our product team to highlight which user flows would be MVP and which would be added to a backlog for handoff or future work.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Image of information architecture diagram">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Validation Research -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Validation Research</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Throughout the entirety of the project, I facilitated 3 research sessions, with 5-7 participants each. Two sessions were in-person and used the Smart Entry and mobile app prototype simultaneously. One session was conducted virtually to test the mobile app prototype in isolation. Each session was formatted with a semi-structured interview introduction, a usability test with 2-4 workflows, and a closing reflection interview.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Image of in-person testing">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Synthesis -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Synthesis</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    For the semi-structured interview questions, we synthesized the information using an affinity map to cluster similar feedback to be translated into actionable insights.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Affinity Map">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <p>
+                    For usability testing, we positioned notes on top of their respective user flows. This gave us a ‘heat map’ of problem areas that should be addressed before moving to higher-fidelity prototyping.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="User Research notes over flow diagram">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- User Permissions -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">User Permissions</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Through user testing, I gathered a lot of feedback around different types of users both inside and outside of the household. Specifically, users wanted to give kids and extended family curated access to only a few select features. These insights led me to change our existing labels from user-type driven language (Owner, Resident, Guest) to feature-driven presets that can be customized (Full Access, Lock/Unlock).
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Image of mid-fidelity user types pointing to high-fidelity access types">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Activity and Notifications -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Activity and Notifications</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Given the number of input sensors on the Smart Entry, I thought a lot about how to avoid ‘notification fatigue’ from push notifications in the app. I facilitated a workshop with members of frog and the client team to categorize all the different inputs and forms of feedback, and we created a document organizing how each could (or should) be delivered to a user. This exercise informed text for sample push notifications, as well as an in-app activity feed.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="Screens of activity feed.">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- High-Fidelity Prototyping -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">High-Fidelity Prototyping</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    As I was working to improve key interaction patterns that we identified in user testing, I was also collaborating with a visual designer on the look and feel of the app. With the client’s openness to our recommendation on branding, we created a visual look that emulated the physical control panel on the Smart Entry, but introduced interactions that were purely digital to enhance the user experience.
+                </p>
+                <figure>
+                    <img src="./" class="img-fluid" loading="lazy" alt="High-fidelity mobile app designs">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Reflection -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Reflection</h6>
+                <h2>Title</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    TBD
+                </p>
+            </div>
+
+        </section>
+
+        <h2>Additional Case Studies</h2>
+        <section class="projects row prev-next" id="prevNextProjects">
+        </section>
+
+    </main>
+
+    @@include('../components/footer.html')
+
+    @@include('../components/source.html')
+</body>
+</html>

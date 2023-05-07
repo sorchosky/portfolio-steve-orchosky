@@ -306,27 +306,27 @@ function nextProcess() {
 // PROJECT ARRAY
 const projects = [
     {       
-        projectId: 'energy-optimization-app',
-        title: 'Energy Optimization App',
+        projectId: 'production-optimization-platform',
+        title: 'Oil Production Optimization Platform',
         mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
         projectCoverImg: './',
         processCoverImg: './',
-        description: 'Managing and optimizing production from oil &amp; gas pumps',
-        url: './',
-        isPublic: false,
+        description: 'Enterprise app for managing and optimizing electrical submersible oil pumps',
+        url: './production-optimization-platform.html',
+        isPublic: true,
         featured: false
     },
     {       
         projectId: 'smart-entry',
-        title: 'Smart Entry',
+        title: 'Smart Entry Mobile App',
         mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
         projectCoverImg: './',
         processCoverImg: './',
-        description: 'Managing and optimizing production from oil &amp; gas pumps',
-        url: './',
-        isPublic: false,
+        description: 'Mobile app companion for an iOT smart door',
+        url: './smart-entry.html',
+        isPublic: true,
         featured: false
     },
     {       

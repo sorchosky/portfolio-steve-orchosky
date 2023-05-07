@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../components/head.html', {
+    "title": "Oil Production Optimization Platform | Steve Orchosky"
+})
+
+<body onload="miniNav(); prevNextProjects();" id="production-optimization-platform" class="process-page">
+    
+    @@include('../components/header.html')
+
+    <main class="container">
+        <!-- Cover -->
+        <div class="jumbotron">
+            <div class="">
+                <h1 class="h1 text-left">Oil Production Optimization Platform</h1>
+                <p class="lead">Enterprise app for managing and optimizing electrical submersible oil pumps</p>
+            </div>
+        </div>
+
+        <div id="mini-nav"></div>
+
+        <img class="img-fluid" src="./img/project--optum/optum--project-cover@2x.jpg" alt="Optum logo">
+
+        <!-- About the Project -->
+        <section class="row">
+            <div>
+                <div class="col-12 col-md-10">
+                    <h6 class="eyebrow">About the Project</h6>
+                    <h2>Enterprise app for managing and optimizing electrical submersible oil pumps</h2>
+                </div>
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <p class="p p--large">
+                        Contact me for additional examples from this project.
+                    </p>
+
+                    <div class="row no-gutters">
+                        <div class="col col-12 col-md-7">
+                            <h4>My Role</h4>
+                            <p>Visual &amp; Interaction Designer</p>
+                            <h4>Client &amp; Context</h4>
+                            <p>Energy technology company, client of frog design</p>
+                            <h4>Deliverable</h4>
+                            <p>Interactive prototype and design system</p>
+                        </div>
+                        <div class="col col-12 offset-md-1 col-md-4">
+                            <h4>Additional Team</h4>
+                            <ul class="full-team__ul">
+
+                                @@loop('../components/team-li.html', [
+                                    { "name": "Aaron Shoon", "title": "Design Director" },
+                                    { "name": "Angie Kang", "title": "Assoc. Design Director" },
+                                    { "name": "Devin Romeo", "title": "Assoc. Design Director" },
+                                    { "name": "Meggan Webber", "title": "Principal Visual Designer" },
+                                    { "name": "Emma Brennan", "title": "Sr. Interaction Designer" },
+                                    { "name": "Manu Uribe Carrasco", "title": "Sr. Interaction Designer" },
+                                    { "name": "Sanya Verma", "title": "Interaction Designer" },
+                                ])
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./img/project--optum/design-system-image.jpg" srcset="./img/project--optum/design-system-image@2x.jpg 2x, ./img/project--optum/design-system-image.jpg 1x" alt="Isometric spash screen of design system components" class="col img-fluid">
+                    <figcaption>Sample components created in the Boulevard design system</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <h2>Additional Case Studies</h2>
+        <section class="projects row prev-next" id="prevNextProjects">
+        </section>
+
+    </main>
+
+    @@include('../components/footer.html')
+
+    @@include('../components/source.html')
+</body>
+</html>
