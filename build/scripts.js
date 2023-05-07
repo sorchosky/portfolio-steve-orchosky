@@ -306,13 +306,25 @@ function nextProcess() {
 // PROJECT ARRAY
 const projects = [
     {       
-        projectId: 'frog',
-        title: 'frog',
+        projectId: 'energy-optimization-app',
+        title: 'Energy Optimization App',
         mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
         projectCoverImg: './',
         processCoverImg: './',
-        description: 'Select work from frog available upon request',
+        description: 'Managing and optimizing production from oil &amp; gas pumps',
+        url: './',
+        isPublic: false,
+        featured: false
+    },
+    {       
+        projectId: 'smart-entry',
+        title: 'Smart Entry',
+        mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
+        projectCoverImg: './',
+        processCoverImg: './',
+        description: 'Managing and optimizing production from oil &amp; gas pumps',
         url: './',
         isPublic: false,
         featured: false
