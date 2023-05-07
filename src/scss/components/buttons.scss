@@ -22,8 +22,16 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 
+    @include xl {
+        font-size: 1.25em;
+    }
+
     &.btn-lg {
         font-size: 1em;
+
+        @include xl {
+            font-size: 1.5em;
+        }
     }
 }
 

@@ -16,3 +16,21 @@
 .hide-on-load {
     visibility: hidden;
 }
+
+// Text Color
+.text-color--black {
+    color: $black;
+}
+
+.text-color--gray {
+    color: $gray;
+}
+
+.text-color--offwhite {
+    color: $offwhite;
+}
+
+// Text Styles
+.text-uppercase {
+    letter-spacing: 0.075em;
+}

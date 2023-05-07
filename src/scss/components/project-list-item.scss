@@ -67,9 +67,9 @@
 
     &.project--disabled {
 
-        .project-list-item__img {
-            filter: grayscale(100%);
-        }
+        // .project-list-item__img {
+        //     filter: grayscale(100%);
+        // }
 
         &:hover {
             .project-list-item__img {

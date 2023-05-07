@@ -35,7 +35,7 @@ let workLoop = () => {
         let listItem;
         for (let bullet in description) {
             let listItem = document.createElement('li');
-            listItem.classList = 'work-experience__li';
+            listItem.classList = 'work-experience__li p';
             listItem.innerHTML = description[bullet];
             itemizedDescription.appendChild(listItem);
         }

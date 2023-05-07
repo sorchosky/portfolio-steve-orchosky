@@ -18,6 +18,18 @@
 .hide-on-load {
   visibility: hidden; }
 
+.text-color--black {
+  color: #192138; }
+
+.text-color--gray {
+  color: #979EB4; }
+
+.text-color--offwhite {
+  color: #F1EBDC; }
+
+.text-uppercase {
+  letter-spacing: 0.075em; }
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

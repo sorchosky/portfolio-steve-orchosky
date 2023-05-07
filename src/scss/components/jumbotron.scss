@@ -12,4 +12,9 @@
         // height: 80vh;
         padding: 8em 15px 4em;
     }
+
+    @include xl {
+        // height: 80vh;
+        padding: 12em 15px 8em;
+    }
 }

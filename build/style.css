@@ -729,6 +729,18 @@ CUSTOM CODE
 .hide-on-load {
   visibility: hidden; }
 
+.text-color--black {
+  color: #192138; }
+
+.text-color--gray {
+  color: #979EB4; }
+
+.text-color--offwhite {
+  color: #F1EBDC; }
+
+.text-uppercase {
+  letter-spacing: 0.075em; }
+
 /* ---- COMPONENTS ---- */
 /* TYPOGRAPHY */
 h1, .h1 {
@@ -745,6 +757,9 @@ h1, .h1 {
   @media (min-width: 991.98px) {
     h1, .h1 {
       font-size: 4em; } }
+  @media (min-width: 1439.98px) {
+    h1, .h1 {
+      font-size: 5.25em; } }
 
 h2, .h2 {
   font-size: 2em;
@@ -756,6 +771,9 @@ h2, .h2 {
   @media (min-width: 991.98px) {
     h2, .h2 {
       font-size: 3.25em; } }
+  @media (min-width: 1439.98px) {
+    h2, .h2 {
+      font-size: 4em; } }
 
 h3, .h3 {
   font-size: 1.5em;
@@ -764,6 +782,9 @@ h3, .h3 {
   @media (min-width: 767.98px) {
     h3, .h3 {
       font-size: 2em; } }
+  @media (min-width: 1439.98px) {
+    h3, .h3 {
+      font-size: 2.75em; } }
 
 h4, .h4 {
   font-size: 1.25em;
@@ -772,20 +793,43 @@ h4, .h4 {
   @media (min-width: 767.98px) {
     h4, .h4 {
       font-size: 1.5em; } }
+  @media (min-width: 1439.98px) {
+    h4, .h4 {
+      font-size: 2em; } }
+
+h5, .h5 {
+  font-size: 1.25em; }
+  @media (min-width: 1439.98px) {
+    h5, .h5 {
+      font-size: 1.5em; } }
+
+@media (min-width: 1439.98px) {
+  h6, .h6 {
+    font-size: 1.5em; } }
+
+h6.full-team__h6, .h6.full-team__h6 {
+  font-size: 1em; }
 
 h4, h5, h6 {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .lead {
   font-size: 1.5em; }
+  @media (min-width: 1439.98px) {
+    .lead {
+      font-size: 2.25em; } }
 
 .eyebrow {
   color: #F1EBDC;
   font-weight: 400;
+  font-size: 1em;
   letter-spacing: 0.075em;
   line-height: 1;
   margin: 0 0 1em 0;
   text-transform: uppercase; }
+  @media (min-width: 1439.98px) {
+    .eyebrow {
+      font-size: 1.25em; } }
 
 .eyebrow:before {
   background-color: #007bff;
@@ -798,14 +842,31 @@ h4, h5, h6 {
 p, .p {
   font-size: 1em;
   letter-spacing: .02em;
-  line-height: 1.75; }
+  line-height: 1.75;
+  margin-bottom: 1.5em; }
+  @media (min-width: 767.98px) {
+    p, .p {
+      line-height: 2;
+      margin-bottom: 2em; } }
   @media (min-width: 991.98px) {
     p, .p {
-      font-size: 1.125em; } }
+      font-size: 1.125em;
+      line-height: 1.75;
+      margin-bottom: 1em; } }
+  @media (min-width: 1439.98px) {
+    p, .p {
+      font-size: 1.25em;
+      letter-spacing: 0;
+      line-height: 2;
+      margin-bottom: 2em; } }
   p.p--large, .p.p--large {
     font-size: 1.5em;
     line-height: 1.6;
     margin-bottom: 1.5em; }
+    @media (min-width: 1439.98px) {
+      p.p--large, .p.p--large {
+        font-size: 2em;
+        margin-bottom: 2em; } }
 
 .text-shadow {
   text-shadow: 0 4px 4px rgba(25, 33, 56, 0.5); }
@@ -813,16 +874,26 @@ p, .p {
 blockquote {
   font-family: "DM Serif Display", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
-  font-size: 1.2em;
-  letter-spacing: .03em;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
   line-height: 1.4;
   margin: .5em 0; }
+  @media (min-width: 991.98px) {
+    blockquote {
+      margin: 1em 0; } }
+  @media (min-width: 1439.98px) {
+    blockquote {
+      font-size: 1.75em;
+      letter-spacing: 0; } }
 
 figcaption {
   color: #979EB4;
   font-size: .875em;
   margin: .5em 0 0;
   text-align: center; }
+  @media (min-width: 1439.98px) {
+    figcaption {
+      font-size: 1.25em; } }
 
 /* BUTTONS */
 a {
@@ -841,8 +912,14 @@ a {
   padding: .5em 1.5em;
   text-decoration: none;
   text-transform: uppercase; }
+  @media (min-width: 1439.98px) {
+    .btn {
+      font-size: 1.25em; } }
   .btn.btn-lg {
     font-size: 1em; }
+    @media (min-width: 1439.98px) {
+      .btn.btn-lg {
+        font-size: 1.5em; } }
 
 .logo {
   padding: .5em;
@@ -863,6 +940,8 @@ img {
 
 figure {
   padding: 3em 0; }
+  figure img {
+    width: 100%; }
 
 .video-embed {
   background-color: blue;
@@ -953,7 +1032,7 @@ header .navbar-toggler {
         .full-nav .navbar-nav a.nav-link {
           font-size: .75em;
           text-align: left; } }
-      @media (min-width: 1199.98px) {
+      @media (min-width: 1439.98px) {
         .full-nav .navbar-nav a.nav-link {
           font-size: 1em; } }
       .full-nav .navbar-nav a.nav-link:hover {
@@ -1017,6 +1096,9 @@ header .navbar-toggler {
   @media (min-width: 991.98px) {
     .jumbotron {
       padding: 8em 15px 4em; } }
+  @media (min-width: 1439.98px) {
+    .jumbotron {
+      padding: 12em 15px 8em; } }
 
 #mini-nav {
   align-items: center;
@@ -1175,11 +1257,16 @@ header .navbar-toggler {
 footer {
   background-color: #050E27;
   padding: 1em 0; }
-
-.footer-brand {
-  text-decoration: none; }
-  .footer-brand:hover {
+  footer a.footer-brand {
     text-decoration: none; }
+    @media (min-width: 1439.98px) {
+      footer a.footer-brand {
+        font-size: 1em; } }
+    footer a.footer-brand:hover {
+      text-decoration: none; }
+  @media (min-width: 1439.98px) {
+    footer a.social-icon {
+      font-size: 1.5em; } }
 
 /* PROJECT LIST ITEM */
 .project-list {
@@ -1228,8 +1315,6 @@ footer {
         position: relative; } }
   .project-list-item h3, .project-list-item .h3 {
     margin-bottom: .5em; }
-  .project-list-item.project--disabled .project-list-item__img {
-    filter: grayscale(100%); }
   .project-list-item.project--disabled:hover .project-list-item__img {
     background-size: auto 100%;
     opacity: .3; }
@@ -1301,6 +1386,9 @@ html {
 .container-fluid {
   max-width: 75rem; }
 
+.container {
+  max-width: 1440px; }
+
 .row {
   margin: 3em auto; }
 
@@ -1336,6 +1424,9 @@ section.row {
   font-size: .75em;
   letter-spacing: .08em;
   text-transform: uppercase; }
+  @media (min-width: 1439.98px) {
+    .full-team__h6 {
+      font-size: 1.25em; } }
 
 .uspc__homepage video {
   margin-bottom: -1em; }

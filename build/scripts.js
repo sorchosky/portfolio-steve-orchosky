@@ -14,14 +14,25 @@ navbarToggle.onclick = function() {
 // PROJECT ARRAY
 const jobList = [
     {
+        img: 'img/professional-experience/frog.jpeg',
+        title: 'Interaction Designer II',
+        company: 'frog',
+        dates: 'OCT 2021–PRESENT',
+        description: [
+            'Designed high-fidelity UI and interaction design for notifications and data visualizations of an enterprise software tool for an oil & gas client ongoing',
+            ' Led mobile app conceptual interaction design and created customer journey and ecosystem maps for the first iOT offering of an analog home goods client',
+            'Collaborate with multifunctional teams & clients as interaction design lead through facilitating and participating in design critiques and presentations'
+        ]
+    },
+    {
         img: 'img/professional-experience/icon.jpeg',
         title: 'Digital Designer',
         company: 'Icon Marketing',
         dates: 'APR 2017–AUG 2020',
         description: [
-            'Designed and developed websites for The U.S. Playing Card, Company, Union Savings Bank, Guardian Savings Bank, Raynor Gaming, and Braxton Brewery',
-            'Concepted and implemented a landing page build system to deliver over 200 custom landing pages for retailers of Tempur-Pedic, Sealy, and Stearns & Foster',
-            'Managed the digital design internship program'
+            'Led and implemented Wordpress and Squarespace websites for seven unique clients in retail and technology, including The U.S. Playing Card Company',
+            'Conceptualized and implemented a brand web page service to deliver over 200 custom web pages for retailers of Tempur-Sealy Internationa',
+            'Managed the agency&rsquo;s first digital design internship program'
         ]
     },
     {
@@ -97,7 +108,7 @@ let workLoop = () => {
         let listItem;
         for (let bullet in description) {
             let listItem = document.createElement('li');
-            listItem.classList = 'work-experience__li';
+            listItem.classList = 'work-experience__li p';
             listItem.innerHTML = description[bullet];
             itemizedDescription.appendChild(listItem);
         }
@@ -282,8 +293,8 @@ function miniNav() {
     
     // Render the miniNav
     miniNav.innerHTML = `
-    <a class="btn prev-next-link prev-link" href="` + prevProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">` + prevProject.title + `</p></a>
-    <a class="btn prev-next-link next-link" href="` + nextProject.url + `"><p class=" text-right eyebrow prev-next-label next-label">` + nextProject.title + `</p></a>
+    <a class="btn prev-next-link prev-link" href="` + prevProject.url + `"><h6 class="text-left eyebrow prev-next-label prev-label">` + prevProject.title + `</h6></a>
+    <a class="btn prev-next-link next-link" href="` + nextProject.url + `"><h6 class=" text-right eyebrow prev-next-label next-label">` + nextProject.title + `</h6></a>
     `;
 }
 
@@ -294,8 +305,19 @@ function nextProcess() {
 
 // PROJECT ARRAY
 const projects = [
-    {
-        
+    {       
+        projectId: 'frog',
+        title: 'frog',
+        mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
+        projectCoverImg: './',
+        processCoverImg: './',
+        description: 'Select work from frog available upon request',
+        url: './',
+        isPublic: false,
+        featured: false
+    },
+    {       
         projectId: 'optum',
         title: 'Optum',
         mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
@@ -304,7 +326,8 @@ const projects = [
         processCoverImg: 'img/project--optum/optum--process-cover.jpg',
         description: 'A new digital healthcare service for life after COVID-19',
         url: './optum.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     },
     {
         projectId: 'microsoft',
@@ -315,7 +338,8 @@ const projects = [
         processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     },
     {
         projectId: 'construction-junction',
@@ -326,7 +350,8 @@ const projects = [
         processCoverImg: 'img/project--construction-junction/cj--process-cover.jpg',
         description: 'Design system and mobile app prototype for inventory management',
         url: './construction-junction.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     },
     {
         projectId: 'tempur-pedic',
@@ -337,7 +362,8 @@ const projects = [
         processCoverImg: 'img/project--tempur-pedic/tempur-pedic--project-cover@2x.jpg',
         description: 'An agency service model to distribute brand landing pages to thousands of retailers',
         url: './tempur-pedic.html',
-        isPublic: true
+        isPublic: true,
+        featured: false
     },
     {
         projectId: 'uspc',
@@ -348,7 +374,8 @@ const projects = [
         processCoverImg: 'img/project--uspc/uspc--project-cover@2x.jpg',
         description: 'Website to showcase the rich history of America’s most beloved playing card brands',
         url: './uspc.html',
-        isPublic: true
+        isPublic: true,
+        featured: false
     },
     {
         projectId: 'kst',
@@ -359,11 +386,13 @@ const projects = [
         processCoverImg: 'img/project--kelly-strayhorn/kst--project-cover@2x.jpg',
         description: 'A new digital theater experience to help audiences connect with performers during COVID-19',
         url: './kelly-strayhorn.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     }
 ];
 
 const publicProjects = projects.filter(project => project.isPublic == true);
+const featuredProjects = projects.filter(project => project.featured == true);
 // projectLoop.js
 
 // PROJECT LOOP
@@ -403,7 +432,6 @@ let projectLoop = () => {
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
                 <div class="project-list-item__text col-12 col-md-8">
-                    <h6 class="eyebrow">Coming Soon</h6>
                     <h3>` + title + `</h3>
                     <p>` + description + `</p>
                 </div>
@@ -417,21 +445,22 @@ let projectLoop = () => {
 
 // PROJECT LOOP MENU
 const projectLoopMenu = document.getElementById("projectLoopMenu");
+
 let i;
 for (i = 0; i < 3; i++) {
     let projectLoopMenuItem = document.createElement("a");
     projectLoopMenuItem.classList = "full-nav__project";
-    projectLoopMenuItem.setAttribute("href", projects[i].url);
+    projectLoopMenuItem.setAttribute("href", featuredProjects[i].url);
     if (i == 0) {
         projectLoopMenuItem.classList.add("full-nav__project--featured");
-        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url('" + publicProjects[i].projectCoverImg + "')";
+        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url('" + featuredProjects[i].projectCoverImg + "')";
     } else {
         projectLoopMenuItem.classList.add("full-nav__project--nonfeatured");
-        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + publicProjects[i].processCoverImg + "')";
+        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + featuredProjects[i].processCoverImg + "')";
     }
     projectLoopMenuItem.innerHTML = `
     <div class="project-text">
-        <p>` + publicProjects[i].title + `</p>
+        <p>` + featuredProjects[i].title + `</p>
     </div>
     `
     projectLoopMenu.appendChild(projectLoopMenuItem);

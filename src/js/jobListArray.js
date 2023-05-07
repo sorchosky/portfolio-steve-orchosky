@@ -4,14 +4,25 @@
 // PROJECT ARRAY
 const jobList = [
     {
+        img: 'img/professional-experience/frog.jpeg',
+        title: 'Interaction Designer II',
+        company: 'frog',
+        dates: 'OCT 2021–PRESENT',
+        description: [
+            'Designed high-fidelity UI and interaction design for notifications and data visualizations of an enterprise software tool for an oil & gas client ongoing',
+            ' Led mobile app conceptual interaction design and created customer journey and ecosystem maps for the first iOT offering of an analog home goods client',
+            'Collaborate with multifunctional teams & clients as interaction design lead through facilitating and participating in design critiques and presentations'
+        ]
+    },
+    {
         img: 'img/professional-experience/icon.jpeg',
         title: 'Digital Designer',
         company: 'Icon Marketing',
         dates: 'APR 2017–AUG 2020',
         description: [
-            'Designed and developed websites for The U.S. Playing Card, Company, Union Savings Bank, Guardian Savings Bank, Raynor Gaming, and Braxton Brewery',
-            'Concepted and implemented a landing page build system to deliver over 200 custom landing pages for retailers of Tempur-Pedic, Sealy, and Stearns & Foster',
-            'Managed the digital design internship program'
+            'Led and implemented Wordpress and Squarespace websites for seven unique clients in retail and technology, including The U.S. Playing Card Company',
+            'Conceptualized and implemented a brand web page service to deliver over 200 custom web pages for retailers of Tempur-Sealy Internationa',
+            'Managed the agency&rsquo;s first digital design internship program'
         ]
     },
     {

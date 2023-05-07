@@ -37,7 +37,6 @@ let projectLoop = () => {
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
                 <div class="project-list-item__text col-12 col-md-8">
-                    <h6 class="eyebrow">Coming Soon</h6>
                     <h3>` + title + `</h3>
                     <p>` + description + `</p>
                 </div>

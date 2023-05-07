@@ -16,6 +16,10 @@ h1, .h1 {
     @include lg {
         font-size: 4em;
     }
+
+    @include xl {
+        font-size: 5.25em;
+    }
 }
 
 h2, .h2 {
@@ -30,6 +34,10 @@ h2, .h2 {
     @include lg {
         font-size: 3.25em;
     }
+
+    @include xl {
+        font-size: 4em;
+    }
 }
 
 h3, .h3 {
@@ -39,6 +47,10 @@ h3, .h3 {
 
     @include md {
         font-size: 2em;
+    }
+
+    @include xl {
+        font-size: 2.75em;
     }
 }
 
@@ -50,6 +62,28 @@ h4, .h4 {
     @include md {
         font-size: 1.5em;
     }
+
+    @include xl {
+        font-size: 2em;
+    }
+}
+
+h5, .h5 {
+    font-size: 1.25em;
+
+    @include xl {
+        font-size: 1.5em;
+    }
+}
+
+h6, .h6 {
+    @include xl {
+        font-size: 1.5em;
+    }
+
+    &.full-team__h6 {
+        font-size: 1em;
+    }
 }
 
 h4, h5, h6 {
@@ -58,16 +92,25 @@ h4, h5, h6 {
 
 .lead {
    font-size: 1.5em;
+
+   @include xl {
+        font-size: 2.25em;
+    }
 }
 
 // eyebrow header
 .eyebrow {
     color: $offwhite;
     font-weight: 400;
+    font-size: 1em;
     letter-spacing: 0.075em;
     line-height: 1;
     margin: 0 0 1em 0;
     text-transform: uppercase;
+
+    @include xl {
+        font-size: 1.25em;
+    }
 }
 
 .eyebrow:before {
@@ -85,15 +128,35 @@ p, .p {
     font-size: 1em;
     letter-spacing: .02em;
     line-height: 1.75;
+    margin-bottom: 1.5em;
+
+    @include md {
+        line-height: 2;
+        margin-bottom: 2em;
+    }
 
     @include lg {
         font-size: 1.125em;
+        line-height: 1.75;
+        margin-bottom: 1em;
+    }
+
+    @include xl {
+        font-size: 1.25em;
+        letter-spacing: 0;
+        line-height: 2;
+        margin-bottom: 2em;
     }
 
     &.p--large {
         font-size: 1.5em;
         line-height: 1.6;
         margin-bottom: 1.5em;
+
+        @include xl {
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
     }
 }
 
@@ -106,10 +169,19 @@ p, .p {
 blockquote {
     font-family: $serif;
     font-style: italic;
-    font-size: 1.2em;
-    letter-spacing: .03em;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
     line-height: 1.4;
     margin: .5em 0;
+
+    @include lg {
+        margin: 1em 0;
+    }
+
+    @include xl {
+        font-size: 1.75em;
+        letter-spacing: 0;
+    }
 }
 
 figcaption {
@@ -117,4 +189,8 @@ figcaption {
     font-size: .875em;
     margin: .5em 0 0;
     text-align: center;
+
+    @include xl {
+        font-size: 1.25em;
+    }
 }

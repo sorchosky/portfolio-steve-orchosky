@@ -32,4 +32,8 @@
     font-size: .75em;
     letter-spacing: .08em;
     text-transform: uppercase;
+
+    @include xl {
+        font-size: 1.25em;
+    }
 }

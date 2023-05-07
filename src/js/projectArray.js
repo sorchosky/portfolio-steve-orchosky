@@ -2,8 +2,19 @@
 
 // PROJECT ARRAY
 const projects = [
-    {
-        
+    {       
+        projectId: 'frog',
+        title: 'frog',
+        mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
+        projectCoverImg: './',
+        processCoverImg: './',
+        description: 'Select work from frog available upon request',
+        url: './',
+        isPublic: false,
+        featured: false
+    },
+    {       
         projectId: 'optum',
         title: 'Optum',
         mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
@@ -12,7 +23,8 @@ const projects = [
         processCoverImg: 'img/project--optum/optum--process-cover.jpg',
         description: 'A new digital healthcare service for life after COVID-19',
         url: './optum.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     },
     {
         projectId: 'microsoft',
@@ -23,7 +35,8 @@ const projects = [
         processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     },
     {
         projectId: 'construction-junction',
@@ -34,7 +47,8 @@ const projects = [
         processCoverImg: 'img/project--construction-junction/cj--process-cover.jpg',
         description: 'Design system and mobile app prototype for inventory management',
         url: './construction-junction.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     },
     {
         projectId: 'tempur-pedic',
@@ -45,7 +59,8 @@ const projects = [
         processCoverImg: 'img/project--tempur-pedic/tempur-pedic--project-cover@2x.jpg',
         description: 'An agency service model to distribute brand landing pages to thousands of retailers',
         url: './tempur-pedic.html',
-        isPublic: true
+        isPublic: true,
+        featured: false
     },
     {
         projectId: 'uspc',
@@ -56,7 +71,8 @@ const projects = [
         processCoverImg: 'img/project--uspc/uspc--project-cover@2x.jpg',
         description: 'Website to showcase the rich history of America’s most beloved playing card brands',
         url: './uspc.html',
-        isPublic: true
+        isPublic: true,
+        featured: false
     },
     {
         projectId: 'kst',
@@ -67,8 +83,10 @@ const projects = [
         processCoverImg: 'img/project--kelly-strayhorn/kst--project-cover@2x.jpg',
         description: 'A new digital theater experience to help audiences connect with performers during COVID-19',
         url: './kelly-strayhorn.html',
-        isPublic: true
+        isPublic: true,
+        featured: true
     }
 ];
 
 const publicProjects = projects.filter(project => project.isPublic == true);
+const featuredProjects = projects.filter(project => project.featured == true);
