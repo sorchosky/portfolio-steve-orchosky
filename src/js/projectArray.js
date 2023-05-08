@@ -5,8 +5,8 @@ const projects = [
     {       
         projectId: 'production-optimization-platform',
         title: 'Oil Production Optimization Platform',
-        mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
+        mobileImg: 'img/thumbnails/production-optimization-platform-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/production-optimization-platform-thumb@2x.jpg',
         projectCoverImg: './',
         processCoverImg: './',
         description: 'Enterprise app for managing and optimizing electrical submersible oil pumps',
@@ -17,8 +17,8 @@ const projects = [
     {       
         projectId: 'smart-entry',
         title: 'Smart Entry Mobile App',
-        mobileImg: 'img/thumbnails/frog-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/frog-thumb@2x.jpg',
+        mobileImg: 'img/thumbnails/smart-entry-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/smart-entry-thumb@2x.jpg',
         projectCoverImg: './',
         processCoverImg: './',
         description: 'Mobile app companion for an iOT smart door',

@@ -1,7 +1,7 @@
 'use strict';
  
 let gulp = require('gulp');
-let sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 let concat = require('gulp-concat');
 let autoprefixer = require('gulp-autoprefixer');
 let fileinclude = require('gulp-file-include');
