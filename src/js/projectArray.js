@@ -9,9 +9,9 @@ const projects = [
         desktopImg: 'img/thumbnails/production-optimization-platform-thumb@2x.jpg',
         projectCoverImg: './',
         processCoverImg: './',
-        description: 'Enterprise app for managing and optimizing electrical submersible oil pumps',
+        description: 'Contact for details, full case study in progress',
         url: './production-optimization-platform.html',
-        isPublic: true,
+        isPublic: false,
         featured: false
     },
     {       
@@ -21,9 +21,9 @@ const projects = [
         desktopImg: 'img/thumbnails/smart-entry-thumb@2x.jpg',
         projectCoverImg: './',
         processCoverImg: './',
-        description: 'Mobile app companion for an iOT smart door',
+        description: 'Contact for details, full case study in progress',
         url: './smart-entry.html',
-        isPublic: true,
+        isPublic: false,
         featured: false
     },
     {       

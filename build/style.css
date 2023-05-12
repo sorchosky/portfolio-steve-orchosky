@@ -868,6 +868,19 @@ p, .p {
         font-size: 2em;
         margin-bottom: 2em; } }
 
+.col-md-1 p,
+.col-md-2 p,
+.col-md-3 p,
+.col-md-4 p,
+.col-md-5 p,
+.col-md-6 p,
+.col-md-7 p,
+.col-lg-1 p,
+.col-lg-2 p,
+.col-lg-3 p,
+.col-lg-4 p {
+  line-height: 1.6; }
+
 .text-shadow {
   text-shadow: 0 4px 4px rgba(25, 33, 56, 0.5); }
 
@@ -926,6 +939,9 @@ a {
   text-decoration: none; }
   .logo h4 {
     margin: 0; }
+    @media (min-width: 1439.98px) {
+      .logo h4 {
+        font-size: 1.5em; } }
 
 .navbar-toggler {
   border: none;
