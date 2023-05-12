@@ -7,9 +7,9 @@ const jobList = [
         img: 'img/professional-experience/frog.jpeg',
         title: 'Interaction Designer II',
         company: 'frog',
-        dates: 'OCT 2021–PRESENT',
+        dates: 'OCT 2021–APR 2023',
         description: [
-            'Designed high-fidelity UI and interaction design for notifications and data visualizations of an enterprise software tool for an oil & gas client ongoing',
+            'Designed high-fidelity UI and interaction design for notifications and data visualizations of an enterprise software tool for an oil &amp; gas client',
             ' Led mobile app conceptual interaction design and created customer journey and ecosystem maps for the first iOT offering of an analog home goods client',
             'Collaborate with multifunctional teams & clients as interaction design lead through facilitating and participating in design critiques and presentations'
         ]
