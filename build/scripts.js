@@ -547,3 +547,7 @@ $(document).ready(function() {
           ]
     });
 });
+
+$(document).ready(function() {
+  $("#loadLast").show();
+})

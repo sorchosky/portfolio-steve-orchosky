@@ -17,15 +17,24 @@
         <!-- Projects -->
         <section class="projects">
             <h2 class="col-12">Case Studies</h2>
-            <ul class="row position-relative project-list" id="projectList">
+            <!-- <ul class="row position-relative project-list" id="projectList"> -->
+            <ul class="row position-relative project-list">
+
+            <!-- Recreate list using HTML components -->
+                @@include('../components/project-list-item.html', {
+                    "title": "Test",
+                    "description": "This is a test",
+                    "image": "img/thumbnails/production-optimization-platform-thumb@2x.jpg",
+                    "url": "#"
+                })
 
             </ul>
         </section>
 
         <!-- About -->
         <section class="row position-relative d-flex align-items-center">
-            <img class="d-block d-lg-none my-5 col-12" srcset="img/steve-portrait--mobile@2x.jpg?20230507 2x, img/steve-portrait--mobile.jpg?20230507 1x" src="img/steve-portrait--mobile.jpg?20230507" alt="Portrait of Steve">
-            <img class="d-none d-lg-block position-relative col-12 col-md-6" srcset="img/steve-portrait@2x.jpg?20230507 2x, img/steve-portrait.jpg?20230507 1x," src="img/steve-portrait.jpg?20230507" alt="Portrait of Steve">
+            <img class="d-block d-lg-none my-5 col-12" src="img/steve-portrait--low-res.jpg?20230507" srcset="img/steve-portrait--mobile@2x.jpg?20230507 2x, img/steve-portrait--mobile.jpg?20230507 1x" alt="Portrait of Steve">
+            <img class="d-none d-lg-block position-relative col-12 col-md-6" src="img/steve-portrait--low-res.jpg?20230507" srcset="img/steve-portrait@2x.jpg?20230507 2x, img/steve-portrait.jpg?20230507 1x," alt="Portrait of Steve">
             <div class="col-12 col-lg-6 px-lg-5">
                 <h6 class="eyebrow">About Me</h6>
                 <h2 class="h3">I use a people-first approach to create successful digital products</h2>
@@ -37,8 +46,12 @@
             </div>
         </section>
 
+        <!-- ########
+        TEMPORARILY HIDING - CAUSING PERFORMANCE ISSUES 
+        ######## -->
+
         <!-- Visual Design -->
-        <section class="row position-relative d-flex align-items-center">
+        <!-- <section class="row position-relative d-flex align-items-center" id="loadLast" style="display: none;">
             <div class="col-12 col-lg-6 px-lg-5">
                 <h6 class="eyebrow">Additional Work</h6>
                 <h2 class="h3">More Pictures &amp; Prototypes</h2>
@@ -48,14 +61,14 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 slick--autoplay my-5 my-lg-0">                
-                <img src="img/visual_design/visual_design__sealy.png" class="img-fluid" alt="Sealy landing page designs">
-                <img src="img/visual_design/visual_design__blue222.png" class="img-fluid" alt="Blue222 marketing site design">
-                <img src="img/visual_design/visual_design__wendal.png" class="img-fluid" alt="Wendal.io marketing site design">
-                <img src="img/visual_design/visual_design__ad_badger.png" class="img-fluid" alt="Ad Badger">
-                <img src="img/visual_design/visual_design__sheboygan.png" class="img-fluid" alt="Sheboygan Yacht Club">
-                <img src="img/visual_design/visual_design__bun_bun_bake_shop.png" class="img-fluid" alt="Bun Bun Bake Shop">
+                <img src="img/visual_design/visual_design__sealy.png" loading="lazy" class="img-fluid" alt="Sealy landing page designs">
+                <img src="img/visual_design/visual_design__blue222.png" loading="lazy" class="img-fluid" alt="Blue222 marketing site design">
+                <img src="img/visual_design/visual_design__wendal.png" loading="lazy" class="img-fluid" alt="Wendal.io marketing site design">
+                <img src="img/visual_design/visual_design__ad_badger.png" loading="lazy" class="img-fluid" alt="Ad Badger">
+                <img src="img/visual_design/visual_design__sheboygan.png" loading="lazy" class="img-fluid" alt="Sheboygan Yacht Club">
+                <img src="img/visual_design/visual_design__bun_bun_bake_shop.png" loading="lazy" class="img-fluid" alt="Bun Bun Bake Shop">
             </div>
-        </section>
+        </section> -->
 
     </main>
 
