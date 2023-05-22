@@ -21,12 +21,73 @@
             <ul class="row position-relative project-list">
 
             <!-- Recreate list using HTML components -->
-                @@include('../components/project-list-item.html', {
-                    "title": "Test",
-                    "description": "This is a test",
-                    "image": "img/thumbnails/production-optimization-platform-thumb@2x.jpg",
-                    "url": "#"
-                })
+            <!-- Still need to troubleshoot mobile -->
+                @@loop('../components/project-list-item.html', [
+                    {
+                        "title": "Oil Production Optimization Platform",
+                        "description": "Contact for details, full case study in progress",
+                        "mobileImg": "img/thumbnails/production-optimization-platform-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/production-optimization-platform-thumb@2x.jpg",
+                        "url": "#",
+                        "isPublic": false
+                    },
+                    {
+                        "title": "Smart Entry",
+                        "description": "Mobile app companion for an iOT smart door",
+                        "mobileImg": "img/thumbnails/smart-entry-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/smart-entry-thumb@2x.jpg",
+                        "url": "./smart-entry.html",
+                        "isPublic": true
+                    },
+                    {
+                        "title": "Optum",
+                        "description": "A new digital healthcare service for life after COVID-19",
+                        "mobileImg": "img/thumbnails/optum-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/optum-thumb@2x.jpg",
+                        "url": "./optum.html",
+                        "isPublic": true
+                    },
+                    {
+                        "title": "Microsoft",
+                        "description": "A new mixed reality experience for remote creative collaboration",
+                        "mobileImg": "img/thumbnails/microsoft-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/microsoft-thumb@2x.jpg",
+                        "url": "./microsoft.html",
+                        "isPublic": true
+                    },
+                    {
+                        "title": "Construction Junction",
+                        "description": "Design system and mobile app prototype for inventory management",
+                        "mobileImg": "img/thumbnails/cj-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/cj-thumb@2x.jpg",
+                        "url": "./construction-junction.html",
+                        "isPublic": true
+                    },
+                    {
+                        "title": "Tempur-Pedic",
+                        "description": "Contact for details, full case study in progress",
+                        "mobileImg": "img/thumbnails/tempur-pedic-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/tempur-pedic-thumb@2x.jpg",
+                        "url": "./tempur-pedic.html",
+                        "isPublic": true
+                    },
+                    {
+                        "title": "U.S. Playing Card",
+                        "description": "Website to showcase the rich history of America&rsquo;s most beloved playing card brands",
+                        "mobileImg": "img/thumbnails/uspc-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/uspc-thumb@2x.jpg",
+                        "url": "./uspc.html",
+                        "isPublic": true
+                    },
+                    {
+                        "title": "Kelly Strayhorn",
+                        "description": "A new digital theater experience to help audiences connect with performers during COVID-19",
+                        "mobileImg": "img/thumbnails/kst-thumb--mobile@2x.jpg",
+                        "desktopImg": "img/thumbnails/kst-thumb@2x.jpg",
+                        "url": "./kelly-strayhorn.html",
+                        "isPublic": true
+                    }
+                ])
 
             </ul>
         </section>
