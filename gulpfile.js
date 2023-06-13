@@ -15,7 +15,7 @@ gulp.task('html', function () {
       basepath: '@file'
     }))
     .pipe(gulp.dest('./build'))
-})
+});
  
 gulp.task('sass', function () {
   return gulp.src(['./src/scss/style.scss' ,'./src/scss/bootstrap.scss'])
@@ -30,7 +30,7 @@ gulp.task('scripts', function () {
   return gulp.src('./src/js/*.js')
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest('./build'))
-})
+});
  
 gulp.task('default', function () {
   gulp.watch('./src/html/**/*.html', gulp.series('html'));

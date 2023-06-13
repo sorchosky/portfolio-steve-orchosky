@@ -322,19 +322,19 @@ const projects = [
         title: 'Smart Entry Mobile App',
         mobileImg: 'img/thumbnails/smart-entry-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/smart-entry-thumb@2x.jpg',
-        projectCoverImg: './',
-        processCoverImg: './',
+        projectCoverImg: 'img/project--smart-entry/smart-entry--project-cover.jpg',
+        processCoverImg: 'img/project--smart-entry/smart-entry--project-cover.jpg',
         description: 'Contact for details, full case study in progress',
         url: './smart-entry.html',
         isPublic: false,
-        featured: false
+        featured: true
     },
     {       
         projectId: 'optum',
         title: 'Optum',
         mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/optum-thumb@2x.jpg',
-        projectCoverImg: 'img/project--optum/optum--project-cover.jpg',
+        projectCoverImg: 'img/project--optum/optum--project-cover@2x.jpg',
         processCoverImg: 'img/project--optum/optum--process-cover.jpg',
         description: 'A new digital healthcare service for life after COVID-19',
         url: './optum.html',
@@ -346,7 +346,7 @@ const projects = [
         title: 'Microsoft',
         mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
-        projectCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
+        projectCoverImg: 'img/project--microsoft/microsoft--process-cover@2x.jpg',
         processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
@@ -363,7 +363,7 @@ const projects = [
         description: 'Design system and mobile app prototype for inventory management',
         url: './construction-junction.html',
         isPublic: true,
-        featured: true
+        featured: false
     },
     {
         projectId: 'tempur-pedic',
@@ -384,7 +384,7 @@ const projects = [
         desktopImg: 'img/thumbnails/uspc-thumb@2x.jpg',
         projectCoverImg: 'img/project--uspc/uspc--project-cover@2x.jpg',
         processCoverImg: 'img/project--uspc/uspc--project-cover@2x.jpg',
-        description: 'Website to showcase the rich history of America’s most beloved playing card brands',
+        description: 'Website to showcase the rich history of America&rsquo;s most beloved playing card brands',
         url: './uspc.html',
         isPublic: true,
         featured: false
@@ -399,7 +399,7 @@ const projects = [
         description: 'A new digital theater experience to help audiences connect with performers during COVID-19',
         url: './kelly-strayhorn.html',
         isPublic: true,
-        featured: true
+        featured: false
     }
 ];
 
@@ -408,51 +408,51 @@ const featuredProjects = projects.filter(project => project.featured == true);
 // projectLoop.js
 
 // PROJECT LOOP
-const projectList = document.getElementById("projectList");
-let projectLoop = () => {
-    for (let project in projects) {
-        // variables for project object properties
-        let title = projects[project].title;
-        let mobileImg = projects[project].mobileImg;
-        let desktopImg = projects[project].desktopImg;
-        let description = projects[project].description;
-        let url = projects[project].url;
-        let isPublic = projects[project].isPublic;
+// const projectList = document.getElementById("projectList");
+// let projectLoop = () => {
+//     for (let project in projects) {
+//         // variables for project object properties
+//         let title = projects[project].title;
+//         let mobileImg = projects[project].mobileImg;
+//         let desktopImg = projects[project].desktopImg;
+//         let description = projects[project].description;
+//         let url = projects[project].url;
+//         let isPublic = projects[project].isPublic;
 
-        // create project li element
-        let projectListItem = document.createElement('li');
-        projectListItem.classList = "project-list-item d-block col-12 d-md-flex col-lg-6";
+//         // create project li element
+//         let projectListItem = document.createElement('li');
+//         projectListItem.classList = "project-list-item d-block col-12 d-md-flex col-lg-6";
 
-        if (isPublic) {
-            // html with project properties
-            projectListItem.innerHTML = `
-            <a href="` + url + `" class="project-list-item__a col-12 p-0">
-                <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
-                <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
-                </div>
-                <div class="project-list-item__text col-12 col-md-8">
-                    <h3>` + title + `</h3>
-                    <p>` + description + `</p>
-                </div>
-            </a>`;
-        } else {
-            // html with project properties
-            projectListItem.classList.add("project--disabled");
-            projectListItem.innerHTML = `
-            <div class="col-12 p-0">
-                <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
-                <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
-                </div>
-                <div class="project-list-item__text col-12 col-md-8">
-                    <h3>` + title + `</h3>
-                    <p>` + description + `</p>
-                </div>
-            </div>`;
-        }
-        // append to #projectList
-        projectList.appendChild(projectListItem);
-    }
-}
+//         if (isPublic) {
+//             // html with project properties
+//             projectListItem.innerHTML = `
+//             <a href="` + url + `" class="project-list-item__a col-12 p-0">
+//                 <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
+//                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
+//                 </div>
+//                 <div class="project-list-item__text col-12 col-md-8">
+//                     <h3>` + title + `</h3>
+//                     <p>` + description + `</p>
+//                 </div>
+//             </a>`;
+//         } else {
+//             // html with project properties
+//             projectListItem.classList.add("project--disabled");
+//             projectListItem.innerHTML = `
+//             <div class="col-12 p-0">
+//                 <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
+//                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
+//                 </div>
+//                 <div class="project-list-item__text col-12 col-md-8">
+//                     <h3>` + title + `</h3>
+//                     <p>` + description + `</p>
+//                 </div>
+//             </div>`;
+//         }
+//         // append to #projectList
+//         projectList.appendChild(projectListItem);
+//     }
+// }
 // projectLoopMenu.js
 
 // PROJECT LOOP MENU
