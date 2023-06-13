@@ -23,7 +23,7 @@ const projects = [
         processCoverImg: 'img/project--smart-entry/smart-entry--project-cover.jpg',
         description: 'Contact for details, full case study in progress',
         url: './smart-entry.html',
-        isPublic: false,
+        isPublic: true,
         featured: true
     },
     {       
