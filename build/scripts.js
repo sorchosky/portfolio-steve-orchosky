@@ -14,13 +14,24 @@ navbarToggle.onclick = function() {
 // PROJECT ARRAY
 const jobList = [
     {
+        img: 'img/professional-experience/target--inverse.png',
+        title: 'Senior Product Designer',
+        company: 'Target',
+        dates: 'JUN 2023–Present',
+        description: [
+            'Designed the first functional MVP for store mode, enabling guests to shop using an interactive map linking digital searches to physical store locations',
+            'Established an MVP chatbot for product inquiries, laying groundwork for future enhancements and the addition of a conversational designer role',
+            'Mentored a design student over a 10-week internship to establish design parity for product cards across responsive web, iOS, and Android platforms'
+        ]
+    },
+    {
         img: 'img/professional-experience/frog.jpeg',
         title: 'Interaction Designer II',
         company: 'frog',
         dates: 'OCT 2021–APR 2023',
         description: [
             'Designed high-fidelity UI and interaction design for notifications and data visualizations of an enterprise software tool for an oil &amp; gas client',
-            ' Led mobile app conceptual interaction design and created customer journey and ecosystem maps for the first iOT offering of an analog home goods client',
+            'Led mobile app conceptual interaction design and created customer journey and ecosystem maps for the first iOT offering of an analog home goods client',
             'Collaborate with multifunctional teams & clients as interaction design lead through facilitating and participating in design critiques and presentations'
         ]
     },
