@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../components/head.html', {
+    "title": "Smart Entry Mobile App | Steve Orchosky"
+})
+
+<body onload="miniNav(); prevNextProjects();" id="store-mode" class="process-page">
+    
+    @@include('../components/header.html')
+
+    <main class="container">
+        <!-- Cover -->
+        <div class="jumbotron">
+            <div class="">
+                <h1 class="h1 text-left">Store Mode</h1>
+                <p class="lead">Helping shoppers navigate their store and increasing average basket size by 37%</p>
+            </div>
+        </div>
+
+        <div id="mini-nav"></div>
+
+        <img class="img-fluid" src="./img/project--store-mode/store-mode--project-cover@2x.jpg" alt="Store Mode project cover" loading="lazy">
+
+        <!-- About the Project -->
+        <section class="row">
+            <div>
+                <div class="col-12 col-md-10">
+                    <h6 class="eyebrow">Overview</h6>
+                    <h2>Target&rsquo;s digital in-store shopping companion</h2>
+                </div>
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <p class="p p--large">
+                        As Senior UX Designer, I helped deliver Target&rsquo;s Store Mode MVP, a mobile-first in-store digital experience focused on utility and navigation. The goal was to empower shoppers to easily find products, get help, and navigate the store using their mobile device, bridging the gap between physical and digital shopping.
+                    </p>
+                    <p class="p p--large">
+                        Six months after ramping traffic to 100% of shoppers, we&rsquo;ve observed that on average 62% of shoppers reused Store Mode within 7 days of prior use and average order value increased by 37% when Store Mode was used during shopping.
+                    </p>
+
+                    <div class="row no-gutters">
+                        <div class="col col-12 col-md-7">
+                            <h4>My Role</h4>
+                            <p>Senior UX Designer</p>
+                            <h4>Context</h4>
+                            <p>Target Find + Buy experience group</p>
+                            <h4>Deliverable</h4>
+                            <p>High fidelity design specs for iOS, Android, and mobile web for production development, information architecture</p>
+                        </div>
+                        <div class="col col-12 offset-md-1 col-md-4">
+                            <h4>Additional Team</h4>
+                            <ul class="full-team__ul">
+                                @@loop('../components/team-li.html', [
+                                    { "name": "Megan Vandersteen", "title": "Senior Product Manager" },
+                                    { "name": "Chris Ryan", "title": "Design Director" },
+                                    { "name": "Ben Schuster", "title": "Principal UX Designer" },
+                                    { "name": "Jason Scully", "title": "Director of Product Management" },
+                                    { "name": "Wes Ostler", "title": "Director of Technology" },
+                                    { "name": "Darian Hernandez", "title": "Sr. Engineer, iOS" },
+                                    { "name": "Laura Marlin", "title": "Sr. Engineer, Android" },
+                                    { "name": "Ramasamy Mohan", "title": "Lead Engineer, Web" },
+                                ])                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Background</h6>
+                <h2>###</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Target observed that 15% of app reviews referenced a desire for contextually-aware in-store features. Although guests frequently turned to the app while shopping, core in-store functionality was limited. The Store Mode MVP aimed to solve this problem by creating a seamless, intuitive experience that enhanced store visits while driving key business outcomes like repeat usage and increased basket size.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Design Process -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Design Process</h6>
+                <h2>###</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Initial shopper insights were gathered during a company hackathon, where guests provided direct feedback on interactive prototypes. Of several concepts tested, guests gravitated toward a map-based navigation tool to help locate products in-store. This insight informed the foundation of the three-layer framework:
+                </p>
+                <ul>
+                    <li>Landing Page — Entry point into the store experience</li>
+                    <li>Listing Page — A structured list of search results or categories</li>
+                    <li>Locate Page — A map view showing item locations in-store</li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <figure>
+                    <img src="./img/project--smart-entry/user-stories.jpg" srcset="./img/project--smart-entry/user-stories@2x.jpg 2x, ./img/project--smart-entry/user-stories.jpg 1x" class="img-fluid" loading="lazy" alt="Collage of Smart Home products">
+                    <figcaption>In a user story ideation workshop with the client, I collaborated with design and product to facilitate voting on MVP user stories across five different priority categories</figcaption>
+                </figure>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    The framework leveraged mental models from native map platforms (Apple Maps, Google Maps) to ensure familiarity and ease of use. My role was to evolve early designs into a scalable, utility-driven experience, balancing intuitive interactions with moments of product discovery.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Key Design Decision -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Key Design Decision</h6>
+                <h2>###</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    One major challenge was deciding what, if anything, to surface on the initial landing map. I advocated for launching with a blank map, opting not to assume shopper intent with preloaded content like deals or shopping list items (which had historically low engagement). 
+                </p>
+            </div>
+            <!-- <figure>
+                <img src="./img/project--smart-entry/prototype-and-door.jpg" srcset="./img/project--smart-entry/prototype-and-door@2x.jpg 2x, ./img/project--smart-entry/prototype-and-door.jpg 1x" class="img-fluid" loading="lazy" alt="Side by side of mid-fidelity screen and door control panel">
+                <figcaption>I combined the interactive components on the exterior (top left) and interior (bottom left) of the Smart Entry&rsquo;s control panel to create a mid-fidelity mobile prototype (right)</figcaption>
+            </figure> -->
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    While this non-intrusive approach respected user autonomy, post-launch research revealed that shoppers desired more guidance on first use—a valuable learning for future iterations.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Cross-Functional Collaboration -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Cross-Functional Collaboration</h6>
+                <h2>###</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    I worked with stakeholders to ensure our design decisions aligned with technical constraints, while still prioritizing the guest experience. I created spaces for regular visibility of design status and decisions through hosting regular engineering discussions, as well as facilitating multiple cross-organizational design leader critiques.
+                </p>
+                <p>
+                    Trade-offs were made transparently and collaboratively to balance consistent progress and core guest utility.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Results & Impact -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Impact</h6>
+                <h2>###</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    The MVP saw immediate traction:
+                </p>
+                <ul>
+                    <li>62% of shoppers reused Store Mode within 7 days of initial use</li>
+                    <li>Basket sizes increased by 37% when Store Mode was used during shopping</li>
+                </ul>
+                <p>
+                    Beyond quantitative metrics, our research team conducted post-launch shop-alongs and usability tests. These revealed that Store Mode's entry point was not as visible as intended, and that bolder, more interruptive design treatments may be needed for future discovery.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Next Steps -->
+        <section class="row">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Next Steps</h6>
+                <h2>###</h2>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <p>
+                    Following a successful MVP launch, we identified three key areas for iteration:
+                </p>
+                <ol>
+                    <li>Improve discovery and visibility of Store Mode entry points</li>
+                    <li>Address out-of-stock scenarios with intelligent alternatives</li>
+                    <li>Explore new product assortments that foster discovery while shopping in store</li>
+                </ol>
+                <p>
+                    The MVP proved that context-aware design can deepen engagement and boost purchase behavior. With a solid foundation in place, future work will focus on evolving the experience into a core part of Target's omnichannel ecosystem.
+                </p>
+            </div>
+
+        </section>
+
+        <h2>Additional Case Studies</h2>
+        <section class="projects row prev-next" id="prevNextProjects">
+        </section>
+
+    </main>
+
+    @@include('../components/footer.html')
+
+    @@include('../components/source.html')
+</body>
+</html>
