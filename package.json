@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
+    "dev": "gulp",
     "run": "gulp"
   },
   "author": "Steve Orchosky",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^5.3.5",
+    "bootstrap": "^4.5.3",
     "browser-sync": "^3.0.4",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
