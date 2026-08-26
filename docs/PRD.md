@@ -2,9 +2,13 @@
 
 > Drafted from the existing site by Claude Code, not spoken by Steve first —
 > flagged in the plan as a first pass. Read it, correct anything wrong, and
-> rewrite the sections that don't sound like you. This governs what Claude
-> builds unasked from here on, so a section left inaccurate becomes a build
-> made on a bad assumption.
+> rewrite the sections that don't sound like you.
+>
+> This file holds durable context only — Problem, Users, Core loop, Success
+> criteria, Constraints. It does **not** carry the live feature backlog: new
+> scoped asks get talked through with Claude and turned into GitHub Issues
+> instead (see "Scoping work" in `CLAUDE.md`). An open, approved Issue is what
+> governs what Claude builds unasked — not a numbered list in this doc.
 
 ## Problem
 
@@ -32,17 +36,21 @@ to that loop being fast, correct, and good-looking on both breakpoints Steve
 actually gets viewed on: desktop (reviewers at a laptop) and mobile (a link
 opened from a phone).
 
-## Scope — this version
+## Roadmap (high-level — see GitHub Issues for the actual scoped backlog)
 
-1. **Get it hosted.** Vercel builds and serves the site correctly from `main`,
-   with `dev` as a staging branch — this is what's shipping now.
+1. **Get it hosted.** ✅ Done — Vercel builds and serves the site correctly
+   from `main`, with `dev` as a staging branch.
 2. **Modernize the build.** Replace Gulp with Astro so edits go through Claude
    Code cheaply: one data file drives every project list instead of four,
    pages pre-render instead of assembling client-side, stale/mismatched vendor
-   scripts get cleaned up in the same pass. Phased in after (1) is confirmed
-   live, as its own feature branch.
-3. **Point the real domain at it.** `steveorchosky.com` → Vercel, once (1) and
-   (2) are both confirmed working on the `.vercel.app` URLs.
+   scripts get cleaned up in the same pass. Breaks down into several GitHub
+   Issues rather than one big migration PR.
+3. **Point the real domain at it.** `steveorchosky.com` → Vercel, once (2) is
+   confirmed working on the `.vercel.app` URLs.
+
+These are direction, not authorization — nothing gets built off this list
+directly. Each becomes one or more GitHub Issues (synthesized from a
+conversation with Steve) before Claude implements anything.
 
 ## Explicitly out of scope (this version)
 
@@ -81,9 +89,9 @@ opened from a phone).
 - When should `steveorchosky.com`'s DNS actually get pointed at Vercel? Held
   until Steve says the word (see Constraints in CLAUDE.md — this is a
   stop-and-ask, not a default).
-- Is the Astro migration's scope (collapsing project data into one file,
-  cleaning up stale vendor scripts) right, or does Steve want it broken into
-  smaller pieces reviewed separately?
+- How to slice the Astro migration into individual GitHub Issues — by page,
+  by concern (data model, then templates, then vendor-script cleanup), or
+  some other cut. Settled when those issues actually get written, not here.
 - Any case studies planned that should shape the new data model's shape
   before it's built (e.g. multiple images per project, video embeds as a
   first-class field) rather than retrofitted after?

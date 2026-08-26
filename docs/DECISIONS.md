@@ -7,6 +7,32 @@
 
 ---
 
+### 2026-08-23 — Scope authority moves from docs/PRD.md to GitHub Issues
+
+**Context:** Vibe-scaffold's default contract treats `docs/PRD.md`'s "Scope —
+this version" list as the thing that authorizes autonomous work. Steve's
+preferred flow instead: talk an ask through with Claude conversationally, have
+Claude synthesize it into a GitHub Issue sized like one unit of work, approve
+the issue, and let Claude run it in a dedicated worktree to completion with
+minimal check-ins — no markdown drafted per ask.
+**Decision:** `CLAUDE.md` updated so "Implement anything explicitly scoped in
+`docs/PRD.md`" reads "in an open, Steve-approved GitHub Issue" instead, with a
+new "Scoping work" section spelling out the conversation → issue → worktree →
+PR flow (branch/PR reference the issue number, PR body carries `Closes #<n>`
+so the issue auto-closes on merge). `docs/PRD.md`'s "Scope — this version"
+section is retired in favor of a non-authoritative "Roadmap" — durable
+direction, not a list Claude builds from directly. `docs/PRD.md` otherwise
+keeps its role for slow-changing context (Problem, Users, Core loop, Success
+criteria, Constraints).
+**Alternatives considered:** Keeping the PRD-driven flow and treating GitHub
+Issues as just a task tracker downstream of it — rejected; Steve was explicit
+that issue synthesis, not markdown drafting, is where scope actually gets
+defined.
+**Reversible?** Yes — it's a `CLAUDE.md`/`docs/PRD.md` wording change with no
+code or infrastructure impact.
+
+---
+
 ### 2026-08-23 — Fixed the gulp build instead of migrating it, for now
 
 **Context:** Making `npm run build` exit cleanly (required for Vercel) surfaced two
